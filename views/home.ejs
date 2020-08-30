@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+    <meta charset='utf-8' />
+	 
+	<link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+	<link href='fullcalendar/timegrid/main.css' rel='stylesheet' />
+	<link href='fullcalendar/list/main.css' rel='stylesheet' />
+	<link rel="stylesheet" href="/stylesheets/main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/utils/Draggable.min.js"></script>
+	<script src="https://kit.fontawesome.com/d490b5cc76.js" crossorigin="anonymous"></script>
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+	<script src='fullcalendar/timegrid/main.js'></script>
+	<script src='fullcalendar/list/main.js'></script>
+	<script src='fullcalendar/interaction/main.js'></script>
+  	
+	</head>
+	<body>
+	    
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="/">Planr</a>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/logout">Logout</a></li>
+			</ul>
+		</nav>
+
+		<div id='external-events'>
+			<p>
+				<strong>Meals</strong>
+			</p>
+			<div id="event-container">
+				<div contentEditable="true" class='fc-event' onclick='$(this).focus()'> <span class="event-text">My Event 1</span></div>
+				<div contentEditable="true" class='fc-event' onclick='$(this).focus()'> <span class="event-text">My Event 2</span></div>
+				<div contentEditable="true" class='fc-event' onclick='$(this).focus()'> <span class="event-text">My Event 3</span></div>
+				<div contentEditable="true" class='fc-event' onclick='$(this).focus()'> <span class="event-text">My Event 4</span></div>
+				<div contentEditable="true" class='fc-event' onclick='$(this).focus()'> <span class="event-text">My Event 5</span></div>
+			</div>
+			<button id="new-event">
+				new
+			</button>	
+				<i id="delete-area" class="fas fa-trash"></i>
+			</div>
+
+		<div id="todo-list">
+			<p>Grocery List <i class="fas fa-plus"></i></p>
+			<input type="text" name="" placeholder="Add New Todo">
+			<ul id="todo-container">
+				<li class="todo-item"><span><i class="fas fa-trash"></i></span>Item 1</li>
+				<li class="todo-item"><span><i class="fas fa-trash"></i></span>Item 2</li>
+				<li class="todo-item"><span><i class="fas fa-trash"></i></span>Item 3</li>
+			</ul>
+		</div>
+
+		<div class="calendar-container">
+			<div id='calendar'></div>	
+		</div>
+	  
+	<script type="text/javascript" src="/scripts/home.js"></script>
+
+	</body>
+</html>
